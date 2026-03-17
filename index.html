@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вгадай число</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Вгадай число</h1>
+    <p>Я загадав число від 1 до 100</p>
+
+    <input type="number" id="guess" placeholder="Твоє число">
+    <button onclick="checkGuess()">Перевірити</button>
+
+    <p id="message"></p>
+    <p id="attempts"></p>
+
+    <button onclick="resetGame()">Зіграти ще</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
