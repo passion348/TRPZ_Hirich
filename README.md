@@ -27,5 +27,5 @@
 
 ## Скриншоти
 
-<img width="1052" height="773" alt="Снимок экрана 2026-03-17 151853" src="https://github.com/user-attachments/assets/899221bb-efb3-4610-b4e4-301eaab8a535" />
-<img width="823" height="616" alt="Снимок экрана 2026-03-17 151934" src="https://github.com/user-attachments/assets/689ee713-c52d-4c47-bdbd-d8cfcd301f60" />
+<img width="1024" height="768" alt="Снимок экрана 2026-03-17 151853" src="https://github.com/user-attachments/assets/899221bb-efb3-4610-b4e4-301eaab8a535" />
+<img width="1024" height="768" alt="Снимок экрана 2026-03-17 151934" src="https://github.com/user-attachments/assets/689ee713-c52d-4c47-bdbd-d8cfcd301f60" />
