@@ -1,6 +1,7 @@
 let secretNumber = Math.floor(Math.random() * 100) + 1;
 let attempts = 0;
 const maxAttempts = 5;
+let guesses = [];
 
 function checkGuess() {
   const userGuess = Number(document.getElementById("guess").value);
@@ -12,11 +13,22 @@ function checkGuess() {
     return;
   }
 
+  if (0 >= userGuess || userGuess > 100){
+    message.innerText = "Введіть число від 1 до 100!";
+    return;
+  }
+
+  if (guesses.includes(userGuess)) {
+    message.innerText = "Ви вже вводили це число!";
+    return;
+  }
+
   if (attempts >= maxAttempts) {
     message.innerText = "Спроби закінчились! Натисніть 'Зіграти ще!";
     return;
   }
 
+  guesses.push(userGuess);
   attempts++;
 
   if (userGuess === secretNumber) {
@@ -43,6 +55,7 @@ function checkGuess() {
 function resetGame() {
   secretNumber = Math.floor(Math.random() * 100) + 1;
   attempts = 0;
+  guesses = [];
 
   document.getElementById("message").innerText = "";
   document.getElementById("attempts").innerText = "";
